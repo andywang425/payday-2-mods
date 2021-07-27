@@ -1,0 +1,86 @@
+{
+	"name": "Little Cheat",
+	"description": "Get money, level up, enable god mode, change game state",
+	"author": "andywang425",
+	"contact": "https://github.com/andywang425",
+	"blt_version" : 2,
+	"image": "mod.png",
+	"color": "58 1 65",
+	"version": "1.0",
+	"priority": 0,
+	"hooks": [
+		{
+			"hook_id": "lib/managers/chatmanager",
+			"script_path": "lua/godoff.lua"
+		},
+		{
+			"hook_id": "lib/managers/chatmanager",
+			"script_path": "lua/god.lua"
+		}
+	],
+	"keybinds": [
+		{
+			"keybind_id": "giveMoney",
+			"name": "give money",
+			"description": "Get money",
+			"script_path": "lua/money.lua",
+			"run_in_menu": true,
+			"run_in_game": true,
+			"localized": false
+		},
+			{
+			"keybind_id": "levelUp",
+			"name": "level up",
+			"description": "Level up",
+			"script_path": "lua/level_up.lua",
+			"run_in_menu": true,
+			"run_in_game": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "godMode",
+			"name": "god mode (ON)",
+			"description": "God mode (server only)",
+			"script_path": "lua/god.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "godModeOff",
+			"name": "god mode (OFF)",
+			"description": "Turn off god mode (server only)",
+			"script_path": "lua/godoff.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "quickwinbtn",
+			"name": "Quick Win",
+			"description": "Win the current heist immediately",
+			"script_path": "lua/quick_win.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "quickdefeatbtn",
+			"name": "Quick Defeat",
+			"description": "Lose the current heist immediately",
+			"script_path": "lua/quick_defeat.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		},
+		{
+			"keybind_id": "disconnectbtn",
+			"name": "Quick Disconnect",
+			"description": "Disconnect the current heist immediately",
+			"script_path": "lua/quick_disconnect.lua",
+			"run_in_menu": false,
+			"run_in_game": true,
+			"localized": false
+		}
+	]
+}

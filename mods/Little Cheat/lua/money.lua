@@ -1,0 +1,1 @@
+managers.money:_add_to_total(100000000)
