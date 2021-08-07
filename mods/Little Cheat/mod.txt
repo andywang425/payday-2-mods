@@ -1,6 +1,6 @@
 {
-	"name": "Little Cheat",
-	"description": "Get money, level up, enable god mode, change game state",
+	"name": "hello world",
+	"description": "hello world",
 	"author": "andywang425",
 	"contact": "https://github.com/andywang425",
 	"blt_version" : 2,
